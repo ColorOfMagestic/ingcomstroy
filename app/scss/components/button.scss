@@ -1,0 +1,21 @@
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.btn__primary {
+    width: 100%;
+}
+
+.btn-size {
+    &-sm {
+    }
+    &-md {
+    }
+    &-xl {
+    }
+}

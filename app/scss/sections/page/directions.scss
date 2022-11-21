@@ -1,0 +1,72 @@
+.directions {
+    position: relative;
+    padding-block: 5.5rem;
+    background: url(../img/directions/pattern.png) repeat 50%;
+    text-align: center;
+    .title {
+         color: $blackColor;
+    }
+}
+
+.directions__subtitle {
+    color: rgba(51, 51, 51, 0.65);
+}
+.directions__links {
+    margin-top: 3rem;
+    a {
+        overflow: hidden;
+        background-color: rgba(83, 177, 229, 0);
+        border-radius: 15px;
+        border-style: solid;
+        border-top-width: 4px;
+        border-bottom-width: 4px;
+        border-color: rgb(33, 151, 217);
+        font-size: 14px;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+        transition: 0.5s;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (min-width: $md) {
+    .directions__links {
+        flex-flow: row wrap;
+        a {
+            width: 48%;
+            margin-left: 1rem;
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+            &:last-child {
+                margin-bottom: 1rem;
+            }
+            &:not(:nth-child(even)) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+@media (min-width: $xl) {
+    .directions__links {
+        margin-top: 4rem;
+        flex-flow: row wrap;
+        a {
+            width: 23%;
+            margin-left: 1.5rem;
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:nth-child(3) {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}

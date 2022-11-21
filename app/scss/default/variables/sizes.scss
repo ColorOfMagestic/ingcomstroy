@@ -8,34 +8,34 @@ $hd: 1920px;
 
 .title-size {
     &--sm {
-        font-size: 19px;
+        font-size: 20px;
     }
     &--md {
-        font-size: 24px;
+        font-size: 20px;
     }
     &--lg {
-        font-size: 25px;
+        font-size: 36px;
     }
     @media (min-width: $md) {
         &--sm {
             font-size: 24px;
         }
         &--md {
-            font-size: 26px;
+            font-size: 30px;
         }
         &--lg {
-            font-size: 31px;
+            font-size: 36px;
         }
     }
     @media (min-width: $xl) {
           &--sm {
-              font-size: 30px;
+              font-size: 28px;
           }
           &--md {
-              font-size: 35px;
+              font-size: 40px;
           }
           &--lg {
-              font-size: 40px;
+              font-size: 36px;
           }
   }
   

@@ -10,10 +10,10 @@ body {
   flex-flow: column;
   min-width: $sm;
   min-height: 100%;
-  font-family:"", sans-serif;
+  font-family:"Montserrat", sans-serif;
   line-height: 1.2;
   color: $textColor;
-  // background-color: $whiteColor;
+  background-color: $whiteColor;
 }
 
 .header {

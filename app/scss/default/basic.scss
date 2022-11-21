@@ -11,7 +11,7 @@ body {
   min-width: $sm;
   min-height: 100%;
   font-family:"Montserrat", sans-serif;
-  line-height: 1.2;
+  line-height: 1.4;
   color: $textColor;
   background-color: $whiteColor;
 }
@@ -30,21 +30,16 @@ body {
  
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 @media(min-width: $md) {
   .container {
-    width: 82%;
+    width: 85%;
   }
 }
 
-@media(min-width: $xl) {
-  .container {
-    width: 96%;
-  }
-}
 @media(min-width: $hd) {
   .container {
     width: 68%;

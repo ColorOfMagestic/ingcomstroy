@@ -9,12 +9,15 @@ $hd: 1920px;
 .title-size {
     &--sm {
         font-size: 20px;
+        font-weight: bold;
     }
     &--md {
         font-size: 20px;
+        font-weight: bold;
     }
     &--lg {
         font-size: 36px;
+        font-weight: bold;
     }
     @media (min-width: $md) {
         &--sm {
@@ -72,7 +75,7 @@ $hd: 1920px;
             font-size: 15px;
           }
           &--md {
-            font-size: 18px;
+            font-size: 24px;
           }
           &--lg {
             font-size: 20px;

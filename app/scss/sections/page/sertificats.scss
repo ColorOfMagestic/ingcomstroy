@@ -1,0 +1,37 @@
+.sertificats {
+    position: relative;
+    padding-block: 3rem;
+    background-color: rgb(162, 219, 249);
+    .title {
+        color: $blackColor;
+        text-align: center;
+    }
+}
+.sertificats_wrapper {
+    margin-top: 2.5rem;
+    a {
+        display: block;
+        &:not(:first-child) {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: $md) {
+    .sertificats_wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+        a {
+            &:not(:first-child) {
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media (min-width: $xl) {
+    .sertificats_wrapper {
+        margin-block: 4rem;
+    }
+}

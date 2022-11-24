@@ -1,13 +1,25 @@
 .sertificats {
     position: relative;
-    padding-block: 3rem;
-    background-color: rgb(162, 219, 249);
+    background: url(../img/sertificats/bg.jpg) no-repeat 50%/cover;
+    &::before {
+      position: absolute;
+      left: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height:100%;
+      background-color: rgba(162, 219, 249, 0.8);
+    }
     .title {
+        padding-top: 3rem;
+
+        position: relative;
         color: $blackColor;
         text-align: center;
     }
 }
 .sertificats_wrapper {
+    position: relative;
     margin-top: 2.5rem;
     a {
         display: block;
@@ -32,6 +44,6 @@
 }
 @media (min-width: $xl) {
     .sertificats_wrapper {
-        margin-block: 4rem;
+        padding-block: 4rem;
     }
 }

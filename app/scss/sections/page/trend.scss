@@ -150,7 +150,7 @@
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 1;
     gap: 2.5rem;
-    align-items:center;
+    // align-items:center;
   }
 
   .trend_wrapper_item {
@@ -164,6 +164,11 @@
             grid-row: 1 / 2;
         } 
     }
+  }  
+  .trend_wrapper_item {
+    .view_block {
+          align-self: center;
+        }
   }  
 
 }

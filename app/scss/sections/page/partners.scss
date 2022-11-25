@@ -76,6 +76,10 @@
   bottom: -1rem;
 }
 
+.swiper-buttons {
+  display: none;
+}
+
 @media (min-width: $md) {
   .partners_swiper {
     padding-bottom: 4rem;
@@ -124,9 +128,10 @@
 
       .swiper-buttons {
         position: absolute;
-        width: 69%;
         right: 0;
         top: 50%;
+        display: block;
+        width: 69%;
         transform: translateY(-50%);
         button {
           width: 2rem;

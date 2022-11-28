@@ -38,47 +38,29 @@
 
 .footer__desktop {
     display: none;
+<<<<<<< HEAD
 }
 
 .footer__desktop_copyright {
     display: none;
+=======
+>>>>>>> 42e6b9513224e8d132b7bf7cfbb75d7f74968032
 }
 
 @media (min-width: $md) {
     .footer__mobile {
         .footer__copyright {
-
-            .copyright {
-                text-align: left;
-            }
-        }
-    }
-
-    .social_wrapper {
-        width: 48%;
-    }
-
-    .footer_requisites {
-        display: block;
-        width: 48%;
-        margin-left: auto;
-        color: $whiteColor;
-        font-size: 0.9rem;
-
-        h3 {
-            font-weight: 700;
-        }
-
-        p {
-            margin-top: 0.7rem;
+        .copyright {
         }
     }
 }
-
 @media (min-width: $xl) {
+<<<<<<< HEAD
     .footer {
         overflow: hidden;
     }
+=======
+>>>>>>> 42e6b9513224e8d132b7bf7cfbb75d7f74968032
     .footer__mobile {
         display: none;
     }
@@ -169,6 +151,7 @@
         }
     }
 
+<<<<<<< HEAD
     .footer__desktop_copyright {
         position: relative;
         display: flex;
@@ -201,6 +184,8 @@
     }
     
 
+=======
+>>>>>>> 42e6b9513224e8d132b7bf7cfbb75d7f74968032
 }
 @media (min-width: $hd) {
     .footer__desktop_info {

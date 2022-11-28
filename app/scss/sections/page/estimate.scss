@@ -85,7 +85,7 @@
     }
 }
 
-.estimate_content_featueres {
+.estimate_content_featuere {
     position: relative;
     margin-top: 5rem;
 
@@ -129,10 +129,19 @@
             margin-inline: auto;
         }
     }
+    
 
     .estimate_content {
         p {
             font-size: 0.9rem;
+        }
+    }
+
+    .estimate_content_featueres {
+        display: flex;
+        justify-content: space-between;
+        .estimate_content_featuere {
+            width: 49%;
         }
     }
 
@@ -170,7 +179,7 @@
         }
     }
 
-    .estimate_content_featueres {
+    .estimate_content_featuere {
         width: 46%;
         margin-top: 4rem;
         &::before {

@@ -50,7 +50,65 @@
 
 .social {
   display: none;
+  align-items: center;
+  justify-content: space-between;
+  .social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 1.25rem;
+    transition: 0.5s;
+    .icon {
+      width: 1.25em;
+      height: 1.25em;
+    }
+  }
+  .social_item_whats {
+    background-color: #43d854;
+    &:hover {
+      background-color: #39c549;
+    }
+  }
+  .social_item_tgm {
+    background-color: #0b9de5;
+    &:hover {
+      background-color: #0484c5;
+    }
+  }
+  .social_item_you {
+    background-color: #EA2424;
+    &:hover {
+      background-color: #C51C1C;
+    }
+  }
+  .social_item_vk {
+    background-color: #0077FF;
+    &:hover {
+      background-color: #0E6FDE;
+    }
+  }
+  .social_item_tt {
+    background-color: #2A2D30;
+    &:hover {
+      background-color: #000000;
+    }
+  }
+  .social_item_ig {
+    background-color: #EA3979;
+    &:hover {
+      background-color: #CC2A65;
+    }
+  }
+
+  .social_info {
+    display: none;
+  }
 }
+
 
 .call_mobile {
   &::before {
@@ -261,39 +319,6 @@
 
   .social {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .social_item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 46px;
-      height: 46px;
-      background-color: #ddd;
-      border-radius: 50%;
-      margin-right: 1.25rem;
-      transition: 0.5s;
-      .icon {
-        width: 1.25em;
-        height: 1.25em;
-      }
-    }
-    .social_item_whats {
-      background-color: #43d854;
-      &:hover {
-        background-color: #39c549;
-      }
-    }
-    .social_item_tgm {
-      background-color: #0b9de5;
-      &:hover {
-        background-color: #0484c5;
-      }
-    }
-
-    .social_info {
-      display: none;
-    }
   }
 
   .call_mobile {
@@ -554,13 +579,11 @@
 
 }
 @media (min-width: $hd) {
-// .header__nav {
-  // width: 72vw;
-// 
+  .header__nav {
+    width: 74vw;
+  }
 
   .adress {
     width: 25%;
   }
-
-  
 }

@@ -1395,22 +1395,53 @@
       </button>
       <div id="particles-js"></div>
     </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__copyright">
-        <p class="copyright">© 2016 - 2022</p>
+    <!-- ESTIMATE -->
+    <div class="estimate">
+      <div class="container">
+        <div class="estimate_wrapper">
+          <form class="estimate_form flex-col flex-cc">
+            <label>Расчет стоимости</label>
+            <div class="select">
+              <select>
+                <option value="">Выберите способ связи *</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Телефон">Телефон</option>
+                <option value="E-mail">E-mail</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Номер или e-mail *">
+            <button class="btn btn__primary">
+              Узнать стоимость
+            </button>
+          </form>
+          <div class="estimate_content">
+            <h3>Получить смету</h3>
+            <p>Мы знаем, насколько важно понимать финальную стоимость установки и не высчитывать ее на калькуляторе, поэтому мы собрали сметы по завершенным проектам под ключ на разных этапах строительства и ремонта.</p>
+            <div class="flex">
+              <div class="estimate_content_featueres icon_1">
+                <h3>РАЗРАБОТКА</h3>
+                <p>Разрабатываем проекты под любую стадию строительства и отделки.</p>
+              </div>
+              <div class="estimate_content_featueres icon_2">
+                <h3>СОПРОВОЖДЕНИЕ</h3>
+                <p>Мы делаем ежегодное и ежеквартальное обслуживание систем ваших кондиционеров.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
+  </main>
 
+  
   <section class="modal">
     <div class="modal__overlay flex-cc">
       <div class="modal__wrapper flex-cc flex-col">
         <button class="modal__close"></button>
         <form class="modal__form flex-cc flex-col">
           <label class="label">
-            <input type="text" placeholder="Введите Ваше имя" />
+            <input type="text" placeholder="Введите Ваше имя" required/>
           </label>
           <button class="btn" type="submit"></button>
         </form>

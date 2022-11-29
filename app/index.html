@@ -931,7 +931,7 @@
                 </li>
               </ul>
               <p></p>
-              <a href="##" class="link trend_link">
+              <a href="#" class="link trend_link">
                 Узнать подробнее об установке в дома и квартиры
               </a>
             </div>
@@ -1016,7 +1016,7 @@
                 </li>
               </ul>
               <p></p>
-              <a href="##" class="link trend_link">
+              <a href="#" class="link trend_link">
                 Узнать подробнее об установке в дома и квартиры
               </a>
             </div>
@@ -1101,7 +1101,7 @@
                 </li>
               </ul>
               <p></p>
-              <a href="##" class="link trend_link">
+              <a href="#" class="link trend_link">
                 Узнать подробнее об установке в дома и квартиры
               </a>
             </div>
@@ -1186,7 +1186,7 @@
                 </li>
               </ul>
               <p></p>
-              <a href="##" class="link trend_link">
+              <a href="#" class="link trend_link">
                 Узнать подробнее об установке в дома и квартиры
               </a>
             </div>
@@ -1275,7 +1275,6 @@
         <p>г. Москва, ул. Тимирязевская, д. 1, стр. 2, этаж 4,офис 2407</p>
       </div>
       <iframe
-       
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A01bbdc1e988e6dd94a3e34ebffa9f1d3940ded00619ccb65932b7c264816cb32&amp;source=constructor"></iframe>
     </div>
     <!-- PARTNERS -->
@@ -1375,7 +1374,7 @@
           <div class="swiper-slide">
             <div class="slide_content">
               <iframe src="https://www.youtube.com/embed/hBsTWSrHBIs"
-                title="Отзыв об установке кондиционера  IngComStroy.ru" frameborder="0"
+                title="Отзыв об установке кондиционера  IngComStroy.ru"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
@@ -1612,23 +1611,100 @@
   </footer>
 
 
-  <section class="modal">
+  <section class="modal application_modal">
     <div class="modal__overlay flex-cc">
       <div class="modal__wrapper flex-cc flex-col">
-        <button class="modal__close"></button>
+        <button class="modal__close">×</button>
+        <h3>Заявка</h3>
         <form class="modal__form flex-cc flex-col">
           <label class="label">
-            <input type="text" placeholder="Введите Ваше имя" required />
+            Ваше Имя<span>*</span>
+            <input type="text" required />
           </label>
-          <button class="btn" type="submit"></button>
+          <label class="label">
+            Ваш номер телефона<span>*</span>
+            <input class="modal_tel" type="tel" required />
+          </label>
+          <button class="btn btn__primary" type="submit">
+            Отправить заявку!
+          </button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- <script src="https://unpkg.com/imask"></script> -->
+  <section class="modal consultation_modal">
+    <div class="modal__overlay flex-cc">
+      <div class="modal__wrapper flex-cc flex-col">
+        <button class="modal__close">×</button>
+        <h3>Заявка на консультацию с менеджером</h3>
+        <form class="modal__form flex-cc flex-col">
+          <label class="label">
+            Ваше Имя<span>*</span>
+            <input type="text" required />
+          </label>
+          <label class="label">
+            Ваш номер телефона<span>*</span>
+            <input class="modal_tel" type="tel" required />
+          </label>
+          <label class="label">
+            Тип помещения
+          </label>
+          <select>
+            <option value="-">-</option>
+            <option value="Офис">Офис</option>
+            <option value="Дом">Дом</option>
+            <option value="Квартира">Квартира</option>
+            <option value="Комната">Комната</option>
+            <option value="Другое">Другое</option>
+          </select>
+
+          <button class="btn btn__primary" type="submit">
+            Отправить заявку!
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal feedback_modal">
+    <div class="modal__overlay flex-cc">
+      <div class="modal__wrapper flex-cc flex-col">
+        <button class="modal__close">×</button>
+        <h3>Ваш отзыв</h3>
+        <form class="modal__form flex-cc flex-col">
+          <label class="label">
+            Ваше Имя<span>*</span>
+            <input type="text" required />
+          </label>
+          <label class="label">
+            Ваш номер телефона
+            <input class="modal_tel" type="tel"/>
+          </label>
+          <label class="label">
+            Ваша электронная почта
+            <input type="email"/>
+          </label>
+          <label class="label">
+            Ваш отзыв <span>*</span>
+            <textarea rows="5" required></textarea>
+          </label>
+          <label class="label">
+            Прикрепить изображение<span>*</span>
+            <input type="file" required />
+          </label>
+
+          <button class="btn btn__primary" type="submit">
+            Отправить заявку!
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 
 
+
+  <script src="https://unpkg.com/imask"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

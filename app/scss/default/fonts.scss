@@ -24,6 +24,14 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/dist/nunito-bold.woff2"), url("../fonts/dist/nunito-bold.woff");
+  src: url("../fonts/dist/TTNorms-Bold.woff2"), url("../fonts/dist/nunito-bold.woff");
+}
+
+@font-face {
+  font-family: "TTNorms-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/dist/TTNorms-Bold.woff2"), url("../fonts/dist/TTNorms-Bold.woff");
 }
 

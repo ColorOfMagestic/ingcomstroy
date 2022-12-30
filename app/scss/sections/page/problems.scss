@@ -1,0 +1,121 @@
+.problems {
+  position: relative;
+  padding-block: 3rem;
+
+  .title {
+    font-size: 1.7em;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .problems_cards_wrapper {
+    position: relative;
+  }
+
+  .problems_card {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 96px;
+      left: 0;
+      transform: translateY(-50%);
+      display: block;
+      content: '';
+      width: 2.3em;
+      height: 3px;
+      background-color: rgb(83, 177, 229);
+    }
+    .problems_card_num {
+      position: relative;
+
+      span {
+        font-size: 11em;
+        color: rgba(0, 0, 0, 0.05);
+        font-family: "TTNorms-Bold";
+        font-weight: 700;
+        text-align: left;
+        line-height: 1;
+      }
+    }
+
+    .problems_card_text {
+      font-size: 0.9em;
+      position: relative;
+      margin-top: -2.5rem;
+      h4 {
+        color: $blackColor;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.01em;
+
+      }
+
+      p {
+        margin-top: 1rem;
+        font-weight: 500;
+        text-align: center;
+        color: rgba(51, 51, 51, 0.5);
+      }
+    }
+    &:not(:first-child) {
+    margin-top: 2rem;
+    }
+  }
+}
+
+@media(min-width: $md) {
+  .problems {  
+    .problems_cards_wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+  
+    .problems_card {
+       flex-basis: 48%;
+
+      &:not(:first-child) {
+      margin-top: 0;
+      }
+      &:nth-child(even) {
+        margin-left: auto;
+      }
+    }
+  }
+}
+@media(min-width: $lg) {
+  .problems {
+    padding-block: 5rem;
+    .title {
+      font-size: 2rem;
+    }
+    .problems_cards_wrapper {
+      margin-block: 2rem;
+    }
+  
+    .problems_card {
+       flex-basis: 32%;
+       margin-inline: auto;
+      &:not(:first-child) {
+      margin-top: 0;
+      }
+      &:nth-child(even) {
+        margin-left: 0;
+      }
+
+      .problems_card_text {
+        font-size: 1em;
+        h4 {
+          text-align: left;
+  
+        }
+  
+        p {
+          text-align: left;
+        }
+      }
+  
+    }
+  }
+}
+

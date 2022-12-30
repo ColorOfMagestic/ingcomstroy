@@ -70,17 +70,17 @@
     .choice_items {
       display: grid;
       grid-template: auto/repeat(3,1fr);
-      align-items: stretch;
       gap: 2rem;
       .choice_items_card {
-        width: auto;
         padding: 2rem;
-        font-size: 1em;
+        width: auto;
+        align-self: stretch;
         &:not(:first-child) {
           margin-top: 0;
         }
         p {
           text-align: left;
+          font-size: 1em;
         }
       }
     }

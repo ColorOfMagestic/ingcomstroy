@@ -1,0 +1,109 @@
+.featueres {
+  position: relative;
+  padding-top: 3rem;
+  background-color: rgb(76, 76, 76);
+  color: #FFF;
+
+  .title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .featueres_wrapper {
+    margin-top: 3rem;
+  }
+
+  .featueres_item {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 4rem;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    & * {
+      position: relative;
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      background-color: rgb(83, 177, 229);
+    }
+
+    h4 {
+      margin-top: 10rem;
+      padding-inline: 2.5rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+
+    .line {
+      margin-block: 1.25rem;
+      width: 17%;
+      height: 3px;
+      background-color: rgb(148, 147, 145);
+    }
+
+    p {
+      padding-inline: 2.5rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:nth-child(1) {
+      background: url(../img/featueres/i1.jpg) no-repeat 50%/cover;
+    }
+
+    &:nth-child(2) {
+      background: url(../img/featueres/i2.jpg) no-repeat 50%/cover;
+    }
+
+    &:nth-child(3) {
+      background: url(../img/featueres/i3.jpg) no-repeat 50%/cover;
+    }
+
+    &:nth-child(4) {
+      background: url(../img/featueres/i4.jpg) no-repeat 50%/cover;
+    }
+
+  }
+}
+
+@media(min-width: $lg) {
+  .featueres {
+    .title {
+      font-size: 2.25rem;
+    }
+
+
+    .featueres_wrapper {
+      display: grid;
+      grid-template: auto/ repeat(4,25%);
+      margin-top: 5rem;
+      .featueres_item {
+        justify-content: flex-start;
+        align-items: flex-start;
+        .line {
+          margin-inline-start: 2.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.meaning {
+  position: relative;
+  padding-block: 3rem;
+  text-align: center;
+  .title {
+    font-size: 1.75em;
+  }
+  p {
+    margin-top: 1.25rem;
+    color: rgb(51, 51, 51, 0.5);
+    font-weight: 500;
+  }
+
+  h4 {
+    margin-top: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+  }
+  ul {
+    color: rgb(51, 51, 51, 0.5);
+    font-weight: 500;
+    list-style: disc;
+  }
+}
+
+@media(min-width: $lg) {
+  .meaning {
+    padding-block: 5rem;
+    text-align: left;
+    .title {
+      font-size: 2.25em;
+    }
+    ul {
+      padding-inline-start: 2rem;
+    }
+  }
+  
+}
+
